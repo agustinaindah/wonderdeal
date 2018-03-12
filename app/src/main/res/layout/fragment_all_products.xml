@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatchLayout">
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/no_data"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAllProduct"
+        style="@style/MatchWrapLayout"/>
+
+   <!-- <include layout="@layout/view_progress"/>-->
+
+    <include layout="@layout/progress_bar" />
+
+    <!-- <include layout="@layout/progress_layout"/>-->
+
+    <include layout="@layout/view_error"/>
+
+</RelativeLayout>
+

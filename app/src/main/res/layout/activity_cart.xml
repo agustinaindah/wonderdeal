@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapLayout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCart"
+        style="@style/MatchWrapLayout"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/txtNoData"
+        style="@style/MatchMatchLayout"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/label_cart_empty"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCheckout"
+        style="@style/MatchWrapLayout"
+        android:layout_alignParentBottom="true"
+        android:text="@string/label_process_checkout"
+        android:theme="@style/ButtonColoredPrimary" />
+
+    <!--<TextView
+        android:id="@+id/txtDelete"
+        style="@style/MatchWrapLayout"
+        android:layout_above="@+id/btnCheckout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="*hold second to delete item" />-->
+
+</RelativeLayout>

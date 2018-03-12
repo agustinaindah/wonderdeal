@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatchLayout"
+    android:background="@color/flat_clouds">
+
+    <android.support.v7.widget.CardView
+        style="@style/MatchWrapLayout"
+        android:layout_margin="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout style="@style/MatchWrapLayout">
+
+            <LinearLayout
+                style="@style/MatchWrapLayout"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:text="@string/label_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputNama"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNama"
+                        style="@style/AppTheme.EditTextMaterial" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_order_id"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputNoPesan"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNoPesan"
+                        style="@style/AppTheme.EditTextMaterial" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_jml_transfer"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputJmlTransfer"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtJmlTransfer"
+                        style="@style/AppTheme.EditTextMaterial"
+                        android:inputType="number" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/label_tgl_transfer"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtTransferDate"
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_event"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="01 Januari 2017"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_no_rek_asal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputNoRekAsal"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNoRekAsal"
+                        style="@style/AppTheme.EditTextMaterial"
+                        android:inputType="number"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_nama_bank_asal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputNamaBankAsal"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNamaBankAsal"
+                        style="@style/AppTheme.EditTextMaterial" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_nama_pemegang_rek_asal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputNmaPemilikRekAsal"
+                    style="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtNmaPemilikRekAsal"
+                        style="@style/AppTheme.EditTextMaterial" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    style="@style/MatchWrapLayout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/label_bukti_transfer"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    style="@style/WrapWrapLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="9dp">
+
+                    <ImageView
+                        android:id="@+id/imgUploadPhoto"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/up_image" />
+
+                    <Button
+                        android:id="@+id/btnUploadPhoto"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignEnd="@+id/imgUploadPhoto"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/imgUploadPhoto"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/label_upload"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    style="@style/MatchWrapLayout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/label_submit"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<group
+        android:id="@+id/nav_menu_after_login">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/label_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account"
+            android:title="@string/label_profile" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_message"
+            android:title="@string/label_message" />
+        &lt;!&ndash; <item
+             android:id="@+id/nav_notification"
+             android:icon="@drawable/ic_notifications"
+             android:title="@string/label_notification" />&ndash;&gt;
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_outline"
+            android:title="@string/label_help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>-->
+</menu>

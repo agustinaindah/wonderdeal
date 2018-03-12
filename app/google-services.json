@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "938106328224",
+    "firebase_url": "https://wonderdealapps.firebaseio.com",
+    "project_id": "wonderdealapps",
+    "storage_bucket": "wonderdealapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938106328224:android:6b9c98db68c088db",
+        "android_client_info": {
+          "package_name": "id.wonderdeal.wonderdealapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938106328224-6t1oljt7v1chgs4ou80rekl3rvblodo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5smB5sFZaGGzi7Uzem5qKCxklSij7NA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_home"
+        id="@+id/tab_home"
+        title="Home" />
+    <tab
+        icon="@drawable/ic_list"
+        id="@+id/tab_category"
+        title="Category" />
+    <tab
+        icon="@drawable/ic_apps"
+        id="@+id/tab_menu"
+        title="Menu" />
+    <!-- <tab
+       id="@+id/tab_whatsapp"
+       icon="@drawable/ic_whatsapp"
+       title="Chat" />-->
+    <!-- <tab
+        icon="@drawable/ic_apps"
+        id="@+id/tab_filter"
+        title="Urutkan" />-->
+    <!--  <tab
+         id="@+id/tab_cart"
+         icon="@drawable/ic_cart_outline"
+         title="Cart" />-->
+
+</tabs>

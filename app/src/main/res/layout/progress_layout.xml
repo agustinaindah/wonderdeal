@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layProgress"
+    style="@style/MatchMatchLayout"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/flat_clouds"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/WrapWrapLayout"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        style="@style/WrapWrapLayout"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-20dp"
+        android:text="@string/loading" />
+
+</RelativeLayout>

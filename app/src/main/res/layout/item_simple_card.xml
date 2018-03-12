@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardItemProduct"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="7dp">
+
+    <RelativeLayout
+        android:id="@+id/layItemProduct"
+        style="@style/MatchMatchLayout"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/imgItemProduct"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey_300"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtItemProductMerk"
+            style="@style/MatchWrapLayout"
+            android:gravity="center_vertical"
+            android:layout_below="@id/imgItemProduct"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:text=""
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtItemProductCategory"
+            style="@style/WrapWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtItemProductMerk"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtItemProductDiscPrice"
+            style="@style/WrapWrapLayout"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="Rp 0"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrice"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtItemProductPrice"
+            android:layout_alignRight="@+id/txtItemProductPrice"
+            android:layout_alignEnd="@+id/txtItemProductPrice" />
+
+        <TextView
+            android:id="@+id/txtItemProductPrice"
+            style="@style/WrapWrapLayout"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="Rp 0"
+            android:layout_alignTop="@+id/txtItemProductCategory"
+            android:layout_alignRight="@+id/txtItemProductMerk"
+            android:layout_alignEnd="@+id/txtItemProductMerk" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@+id/txtItemProductCategory"
+            android:layout_alignStart="@+id/txtItemProductCategory"
+            android:layout_below="@+id/txtItemProductCategory"
+            android:max="5"
+            android:rating="5"
+            android:progressTint="#ffc400"/>
+
+     <!--   <TextView
+            android:id="@+id/txtItemProductExp"
+            android:layout_width="105dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtItemProductMerk"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Expired: \n20 Sept  2017"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />-->
+
+        <RelativeLayout
+            android:id="@+id/layDiscount"
+            style="@style/MatchWrapLayout"
+            android:orientation="horizontal">
+
+            <!--<TextView
+                android:id="@+id/txtItemProductDisc"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/layout_circle_discount"
+                android:gravity="center"
+                android:text="50%"
+                android:textColor="@android:color/white" />-->
+
+            <TextView
+                android:id="@+id/txtItemProductDisc"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:background="@drawable/corners_discount"
+                android:text="0%"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchWrapLayout">
+
+    <ScrollView
+        style="@style/MatchMatchLayout"
+        android:layout_marginBottom="160dp"
+        android:background="#e0e0e0"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout style="@style/MatchWrapLayout">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/sliderProductDetail"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:fitsSystemWindows="true"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardDetailItemPrice"
+                style="@style/MatchWrapLayout"
+                android:layout_below="@+id/sliderProductDetail">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:layout_margin="7dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDetailTitle"
+                        style="@style/MatchWrapLayout"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="#424242"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        style="@style/MatchWrapLayout"
+                        android:padding="10dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:drawablePadding="5dp"
+                                android:text="Discount"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:gravity="left"
+                                android:text="Sold"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/txtDetailPriceNormal"
+                                android:layout_width="120dp"
+                                android:text=""
+                                android:textSize="15sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/txtDetailDiscount"
+                                android:layout_width="100dp"
+                                android:gravity="left"
+                                android:text=""
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtDetailSold"
+                                android:layout_width="120dp"
+                                android:text=""
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/txtDetailPriceDisc"
+                                android:layout_width="100dp"
+                                android:gravity="left"
+                                android:text=""
+                                android:textColor="@color/colorTextPrice"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <FrameLayout
+                        android:layout_width="320dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="4dp"
+                        android:background="#9e9e9e" />
+
+                    <TableLayout
+                        style="@style/MatchWrapLayout"
+                        android:padding="7dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/txtDetailCat"
+                                android:layout_width="100dp"
+                                android:text=""
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <RatingBar
+                                android:id="@+id/ratingBarDetail"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="100dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:focusable="true"
+                                android:numStars="5"
+                                android:progressTint="#ffc400"
+                                android:rating="5" />
+
+                            <!--android:layout_gravity="center_vertical|center_horizontal"-->
+
+                            <!-- <TextView
+                                 android:id="@+id/textView"
+                                 android:layout_width="80dp"
+                                 android:gravity="center"
+                                 android:text=" Rating"
+                                 android:textSize="13sp" />-->
+                        </TableRow>
+
+                        <!--  <TableRow>
+
+                              <TextView
+                                  android:id="@+id/txtDetailAlamat"
+                                  style="@style/MatchWrapLayout"
+                                  android:lines="2"
+                                  android:maxLines="2"
+                                  android:text="Jl. Perjuangan No 21 Jakarta"
+                                  android:textSize="10sp" />
+
+                          </TableRow>-->
+
+                    </TableLayout>
+
+                    <TextView
+                        android:id="@+id/txtDetailAlamat"
+                        style="@style/MatchWrapLayout"
+                        android:lines="4"
+                        android:maxLines="4"
+                        android:padding="3dp"
+                        android:text=""
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardDetailItemInfo"
+                style="@style/MatchWrapLayout"
+                android:layout_below="@+id/cardDetailItemPrice"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        style="@style/MatchWrapLayout"
+                        android:text="Deskripsi"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <com.ms.square.android.expandabletextview.ExpandableTextView
+                        android:id="@+id/expandProductDetailDesc"
+                        style="@style/MatchWrapLayout"
+                        expandableTextView:maxCollapsedLines="4">
+
+                        <TextView
+                            android:id="@id/expandable_text"
+                            style="@style/MatchWrapLayout"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#666666"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@id/expand_collapse"
+                            style="@style/WrapWrapLayout"
+                            android:layout_gravity="center|bottom"
+                            android:background="@android:color/transparent"
+                            android:padding="10dp" />
+
+                    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+                    <TextView
+                        android:id="@+id/txtTitleInfo"
+                        style="@style/MatchWrapLayout"
+                        android:layout_marginTop="10dp"
+                        android:text="INFO PENTING"
+                        android:textStyle="bold" />
+
+                    <com.ms.square.android.expandabletextview.ExpandableTextView
+                        android:id="@+id/expandProductDetailInfo"
+                        style="@style/MatchWrapLayout"
+                        expandableTextView:maxCollapsedLines="4">
+
+                        <TextView
+                            android:id="@id/expandable_text"
+                            style="@style/MatchWrapLayout"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="#666666"
+                            android:textSize="16sp" />
+
+                        <ImageButton
+                            android:id="@id/expand_collapse"
+                            style="@style/WrapWrapLayout"
+                            android:layout_gravity="center|bottom"
+                            android:background="@android:color/transparent"
+                            android:padding="10dp" />
+
+                    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/MatchWrapLayout"
+                android:layout_below="@+id/cardDetailItemInfo"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    style="@style/MatchWrapLayout"
+                    android:orientation="vertical">
+
+                    <!-- <ImageView
+                         android:layout_width="match_parent"
+                         android:layout_height="150dp"
+                         android:background="@color/grey_300"
+                         android:src="@drawable/no_image" />
+
+                     <TextView
+                         android:id="@+id0/txtDetailAddressMaps"
+                         style="@style/MatchWrapLayout"
+                         android:padding="10dp"
+                         android:text=""
+                         android:textSize="15sp" />-->
+                    <!--<TextView
+                        style="@style/MatchWrapLayout"
+                        android:padding="7dp"
+                        android:textStyle="bold"
+                        android:text="Maps" />
+-->
+                    <WebView
+                        android:id="@+id/wvGoogleMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="5dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        style="@style/MatchWrapLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- <TableLayout
+             style="@style/MatchWrapLayout"
+             android:padding="3dp"
+             android:shrinkColumns="*"
+             android:stretchColumns="*">
+
+             <TableRow>
+
+                 <TextView
+                     android:id="@+id/txtDetailEndTime"
+                     android:layout_width="120dp"
+                     android:text="29 Days 00:00:00"
+                     android:textSize="13sp"
+                     android:textStyle="bold" />
+
+                 &lt;!&ndash;<ImageButton
+                     android:layout_width="50dp"
+                     android:gravity="center"
+                     android:background="@drawable/ic_favorite_border"
+                     android:text="Sold"
+                     android:textSize="15sp" />&ndash;&gt;
+
+             </TableRow>
+
+         </TableLayout>
+ -->
+        <Button
+            android:id="@+id/btnShopNow"
+            style="@style/MatchWrapLayout"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_cart_outline"
+            android:text="@string/label_buy_now"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+        <Button
+            android:id="@+id/btnViaWhatsApp"
+            style="@style/MatchWrapLayout"
+            android:drawableLeft="@drawable/ic_whatsapp"
+            android:text="@string/label_order_wa"
+            android:theme="@style/ButtonColoredPrimaryDark" />
+
+    </LinearLayout>
+
+    <include layout="@layout/progress_layout" />
+
+    <include layout="@layout/view_error" />
+
+</RelativeLayout>

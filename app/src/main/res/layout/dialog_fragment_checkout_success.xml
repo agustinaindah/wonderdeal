@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrapLayout"
+    android:layout_margin="30dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txtOrderSuccess"
+        style="@style/MatchWrapLayout"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/msg_success"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTeksOrderId"
+        style="@style/MatchWrapLayout"
+        android:layout_below="@+id/txtOrderSuccess"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="ORDER ID"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOrderID"
+        style="@style/MatchWrapLayout"
+        android:layout_below="@+id/txtTeksOrderId"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="982"
+        android:textColor="#424242"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/frCheckoutSuccess"
+        android:layout_below="@+id/txtOrderID"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9e9e9e"/>
+
+    <TextView
+        android:id="@+id/txtTransfer"
+        android:layout_below="@+id/frCheckoutSuccess"
+        style="@style/MatchWrapLayout"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/transfer"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/txtNamaPerusahaan"
+        style="@style/MatchWrapLayout"
+        android:layout_below="@+id/txtTransfer"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#424242"
+        android:text="@string/label_nama_perusahaan"
+        android:textSize="17sp" />
+
+    <TableLayout
+        android:id="@+id/tblRekening"
+        style="@style/MatchWrapLayout"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_below="@+id/txtNamaPerusahaan"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:text="Mandiri AC"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:gravity="left"
+                android:textColor="#424242"
+                android:text="@string/label_no_rek_mandiri"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="BCA AC"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/label_no_rek_bca"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

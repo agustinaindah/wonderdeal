@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Wonderdeal</string>
+
+    <string name="base_url">http://wonderdeal.id/</string>
+    <string name="X_API_KEY">terserah</string>
+
+    <string name="action_back_pressed">If you click once again the app will be closed</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="no_data">Tidak ada data</string>
+    <string name="loading">Loading...</string>
+    <string name="transition_string">transition</string>
+
+    <string name="payment">Payment Confirm</string>
+    <string name="menu">Menu</string>
+    <string name="search"> Cari Deal Terbaik mu</string>
+
+    <string name="back">Kembali</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_cart">Cart</string>
+    <string name="label_menu">Menu</string>
+    <string name="label_category">Kategori</string>
+    <string name="label_payment_form">Payment Confirm</string>
+    <string name="label_checkout">Checkout</string>
+    <string name="label_billing">Billing</string>
+    <string name="label_nama_perusahaan">PT Kala Citra Nuswantara</string>
+    <string name="label_no_rek_mandiri">137.00.1291696-7</string>
+    <string name="label_no_rek_bca">8465285555</string>
+    <string name="label_order_received">Order Received</string>
+
+    <!--pesan-->
+    <string name="msg_stock_out">Stock Sudah Habis</string>
+    <string name="msg_success">Terimakasih.\nPesanan Anda Telah diterima</string>
+    <string name="msg_empty">Harap diisi</string>
+    <string name="msg_not_valid">Tidak valid</string>
+    <string name="msg_success_payment_confirm">Terimakasih untuk pesan Anda \nsudah dikirim.Tunggu Konfirmasi \ndari Admin wonderdeal.id</string>
+    <string name="label_cart_empty">Keranjang anda masih kosong</string>
+    <string name="label_process_checkout">Proceed to checkout</string>
+    <string name="label_payment_method">Metode Pembayaran</string>
+    <string name="label_buy_now">Beli Sekarang</string>
+    <string name="label_order_wa">Order Via Whatsapp</string>
+    <string name="label_name">Nama</string>
+    <string name="label_order_id">No Pesanan/ Order ID</string>
+    <string name="label_jml_transfer">Jumlah Transfer</string>
+    <string name="label_tgl_transfer">Tanggal Transfer</string>
+    <string name="label_no_rek_asal">No Rekening Asal</string>
+    <string name="label_nama_bank_asal">Nama Bank Asal</string>
+    <string name="label_nama_pemegang_rek_asal">Nama Pemegang Rekening Asal</string>
+    <string name="label_bukti_transfer">Bukti Transfer</string>
+    <string name="label_upload">upload</string>
+    <string name="label_submit">Submit</string>
+    <string name="transfer">Transfer</string>
+    <string name="label_syarat"><![CDATA[Term & Conds]]></string>
+
+    <!--array-->
+    <string-array name="data_qty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="label_billing_details">Billing Details</string>
+    <string name="label_full_name">Nama Lengkap*</string>
+    <string name="label_address">Alamat Lengkap*</string>
+    <string name="label_telp">Telp*</string>
+    <string name="label_email">Alamat Email*</string>
+    <string name="label_notes">Order Notes</string>
+
+</resources>

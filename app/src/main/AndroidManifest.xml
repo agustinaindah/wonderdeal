@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.wonderdeal.wonderdealapps">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".WonderdealApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_wonderdeal"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".features.splash.SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.main.MainActivity2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".features.products.detail.DetailProductsActivity"
+            android:label="@string/back"
+            android:parentActivityName=".features.main.MainActivity2"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".features.main.MainActivity2" />
+        </activity>
+        <activity
+            android:name=".features.search.SearchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.category.CategoryActivity"
+            android:label="@string/label_category"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.category.productByCategory.ProductByCategoryActivity"
+            android:label="@string/label_category"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.menu.ListMenuActivity"
+            android:label="@string/label_menu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.cart.CartActivity"
+            android:label="@string/label_cart"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.payment_confirm.PaymentConfirmActivity"
+            android:label="@string/label_payment_form"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.checkout.CheckoutActivity"
+            android:label="@string/label_checkout"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".features.syarat_ketentuan.SyaratKetentuanActivity"
+            android:label="@string/label_syarat"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
